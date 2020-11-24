@@ -75,7 +75,8 @@
     <div class="breadcrumbs" data-aos="fade-in">
         <div class="container">
             <h2>Introduction to AP Computer Science A</h2>
-            <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+            <p>Learn the fundamentals of AP Computer Science through Objects, Methods, Arrays,
+            Sorting, and More.</p>
         </div>
     </div><!-- End Breadcrumbs -->
 
@@ -141,6 +142,28 @@
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tab-5">ArrayList</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-6">Objects and Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-7">Inheritance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-8">2-D Arrays </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-9">Searching</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-10">Sorting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-11">Recursion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-12">Binary Math and Hexadecimal</a>
+                        </li>
+
                     </ul>
                 </div>
                 <div class="col-lg-9 mt-4 mt-lg-0">
@@ -308,14 +331,311 @@
                                     and is the equivalent to the functionality of array.length when we were doing arrays.
                                     It is important that when traversing through an ArrayList you use the size method.</p>
                                     <img src="assets/img/arraylist3.png" alt="" class="img-fluid">
-                                    <p>
-                                    <p/>
+
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
+                        <div class="tab-pane" id="tab-6">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Objects and Classes</h3>
+                                    <p class="font-italic">The video below will provide a brief introduction into Objects and Classes.
+                                    Classes and Objects have any impact on all the code you write in Java. The object
+                                    is something that has features and is made up of data and variable input. The class
+                                    is what we use in order to create those objects. The video below will
+                                    provide you with a basic understanding of these concepts.</p>
+
+                                    <p>An object would be a car, because there are specific attributes that define a car
+                                    such as brand, type of fuel, or type of car.</p>
+
+                                    <p>Below is the syntax used for a class. In it we see syntax known as
+                                        setters and getters. This process is used in <b>encapsulation</b> because we
+                                    want to hide what we are doing from the user in the case that we are handling
+                                    sensitive data such as password or ID number. This makes sure that
+                                    our data can only be accessed within that particular class. In this scenario,
+                                        the <b>get method</b> will return a value or output and the <b>set method</b> will allow
+                                    you to change or set a value.</p>
+                                    <img src="assets/img/Encap.png" alt="" class="img-fluid">
+                                    <p>The picture below shows the main method, which is in a different class, and how
+                                    we can access and manipulate an object when we are operating in a different class.</p>
+                                    <img src="assets/img/result.png" alt="" class="img-fluid">
+                                    <p>The picture below shows the syntax behind a constructor in the Car Class and
+                                    the syntax we will use in the main method to create a car object. A <b>Constructor</b>
+                                    is used to initialize an object, and it has no return value which makes
+                                    it easier to set initial values for an Object. In the main, you will create an object
+                                    using the constructor.</p>
+                                    <img src="assets/img/Constructor.png" alt="" class="img-fluid">
+                                    <p>One thing you will see in your homework is the use of methods within a class that
+                                    you will call in your main method. The syntax for how to call the method in your main
+                                    and how to set up the method is shown below.</p>
+                                    <img src="assets/img/moreOb.png" alt="" class="img-fluid">
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-7">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Inheritance</h3>
+                                    <p class="font-italic">Inheritance is one of the main subsets
+                                    of Objects and Classes. Inheritance is the process of one class
+                                    taking on the properties of another class. The class that inherits
+                                    the properties of another class is called the subclass, and the
+                                    main class who has its properties and methods being inherited is
+                                    the super class.</p>
+                                    <img src="assets/img/inheritance.png" alt="" class="img-fluid">
+                                    <p>What you see above is the implementation of code in order to
+                                    show the syntax behind Inheritance. Inheritance is denoted by the
+                                    keyword <b>extends</b>. The Calculate class is the parent/super class
+                                    and the Maths class is the child/sub class. This means that the object
+                                    in the Maths class inherits the properties of the parent class, which means
+                                    that even if we create an object in the Maths class it can still access the methods
+                                    in the Calculate class. However, there is one thing to note if you create an object
+                                    from class Calculate you <b>cannot</b> invoke the multiplication method, because
+                                    the multiplication method is only part of the child(Maths) class. This means that
+                                    the parent class cannot inherit methods and properties from the subclass.</p>
+                                    <p>Another keyword you will see in inheritance is <b>super</b>. This keyword is used
+                                    when you have a method with the same name in both the parent class and sub class, but
+                                    these methods have different return values or print statements. If you want to
+                                    invoke the method of the parent class you use the keyword <b>(super.)</b> before the
+                                    method name.</p>
+
+
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-8">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Multi-Dimensional Arrays</h3>
+                                    <p class="font-italic">Multi-Dimensional Arrays are known as arrays within
+                                    arrays. Just like arrays, multi-dimensional arrays start off at index 0.</p>
+                                    <img src="assets/img/2dfirst.png" alt="" class="img-fluid">
+                                    <p>The picture above is meant to show a visual example of a 2-D array.
+                                    The 2-D array is defined by the number of rows and columns so this array
+                                    would be a 4 x 5 array because there are 4 rows and 5 columns. </p>
+
+                                    <img src="assets/img/2d1.png" alt="" class="img-fluid">
+
+                                    <p>The image above shows how to initialize a 2-D array.
+                                One of the important things to note with a 2-D array is that not every
+                                row will have the same number of columns. As you can see with the
+                                2-D array called <b>box</b> there are a different amount of values in
+                                        each row. However, when we use the syntax <b>box.length</b> the result will be the number of
+                                    rows in the 2-D array.</p>
+                                    <img src="assets/img/2d3.png" alt="" class="img-fluid">
+
+                                    <p>The picture above shows how to traverse through a 2-D array.
+                                    In the picture we use the nexted for loop, which is a for loop
+                                    within a for loop in order to traverse through the grid. In the
+                                    second for loop, we use <b>i < box[i].length</b>. This will give
+                                    you the amount of columns in the row, and it is safer to use this
+                                    syntax, because as mentioned above there are certain cases where the
+                                    2-D array may not have the same number of columns from 1 row to the next.</p>
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-9">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Binary Search</h3>
+                                    <p class="font-italic">Binary Search or linear search is a well-known
+                                        algorithm used in Java that takes an array that has been sorted
+                                        and finds a specific value within that array by shrinking the
+                                        search interval.</p>
+                                    <p>The goal of binary search is to optimize the search process.
+                                    There is always a chance that the number we are looking for is at the end
+                                    of an array, and binary search creates a faster method to find this number.</p>
+                                    <img src="assets/img/show.png" alt="" class="img-fluid">
+
+                                    <p>The picture above shows a visual example of binary search when we are looking for the
+                                    number. As you can see the search interval is growing smaller, which is how we find the number
+                                    that we are looking for which is 22.</p>
+                                    <img src="assets/img/itera.png" alt="" class="img-fluid">
+                                    <p>The picture above shows the code needed to execute the binary search.
+                                    This way is through the use of a for loop, and in our syntax the value of start
+                                    and end change depending on where the number is located. One important thing to note is that
+                                    in order for binary search to be used the array we are using must be <b>sorted</b>.</p>
+
+                                    <img src="assets/img/recurse.png" alt="" class="img-fluid">
+                                    <p>The picture above is an example of code that can be written for the recursive function
+                                    in order to perform the binary search. The base and iterative case allow for the program
+                                    to locate the value.</p>
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-10">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Sorting</h3>
+                                    <p class="font-italic">Sorting is a concept we touched on in the previous section,
+                                    but is slightly more complicated. The process of sorting utilizes code in order to
+                                    arrange data.</p>
+
+                                    <p>The whole point of sorting is to make sure we can organize our data, but a big part
+                                    of sorting is optimization. In order to sort we use algorithms. There are many algorithms
+                                    that are widely used, but in this lesson we will go over the 3 you will see the most often.
+                                    These algorithms are created in order to optimize run-time and memory, making it easier
+                                    for your computer to run these programs.</p>
+
+                                    <img src="assets/img/bubble.png" alt="" class="img-fluid">
+                                    <p><b>Bubblesort</b> is the simplest sorting method we will see in Java. Bubblesort
+                                    looks at 2 adjacent numbers in an array and swaps them if the second element
+                                    is less than the first element. The program will keep going through this list until
+                                    it doesn't have to swap any more values.</p>
+                                    <img src="assets/img/select.png" alt="" class="img-fluid">
+                                    <p><b>Selection Sort</b> is the more common sorting method used by students. In
+                                    a selection sort we have the original array and the new, empty array. We go through
+                                    the original array and find the minimum and take out that value from the original array,
+                                    and put it into the new array. Then we continue this process until all the values in
+                                    the original array have been moved and sorted in the new array.</p>
+                                    <img src="assets/img/quick.png" alt="" class="img-fluid">
+                                    <p>The final sorting method we will be going over is the <b>Quicksort</b>.
+                                    The quicksort is the most optimized algorithm out of the 3 we are learning in
+                                    this section. With this method of sorting we take a specific/break point in
+                                    the list and we determine all the values that are greater and smaller than
+                                    the value in the break point. The Quicksort method is built around this break/pivot point,
+                                        and in the code above we use the recursive implementation of the Quicksort. In the implementation above we use
+                                    the last value in the array as a break point, and it is recommended that you use either
+                                    the start or end point as your break point to make it easier to manage the code.</p>
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-11">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Recursion</h3>
+                                    <p class="font-italic">Recursion is a subsection of methods, and involves calling
+                                    a method within that same method.</p>
+                                    <p>The key for understanding Recursion are 2 pieces. The first piece is the
+                                    <b>base case</b>. The base case is the stopping condition or the statement that
+                                        tells the program when to stop. The second piece is the <b>iterative step</b>, or
+                                    the part that tells the program to keep progressing.</p>
+                                    <img src="assets/img/step.png" alt="" class="img-fluid">
+                                    <p>The above picture shows a step-by-step example of how to understand
+                                    a problem centered around recursion. It goes line by line to understand
+                                    each step performed by the program.</p>
+                                    <img src="assets/img/code.png" alt="" class="img-fluid">
+                                    <p>This would be an example piece of code that would print the sum of
+                                    numbers from 1 to n. In this case n would be 4. This code would progress
+                                    until the base case of n = 1 is reached.</p>
+
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-12">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Binary Math and Hexadecimal</h3>
+                                    <p class="font-italic">This section will cover a miscellaneous topic
+                                        covered in AP Computer Science, which is the topic of
+                                        hexadecimal and binary numbers.</p>
+                                    <p>Hexadecimal also referred to base 16 numbers are represented by characters from
+                                    0 to F. Binary is representing numbers and values through 1s and 0s. Decimal is the common
+                                    set of numbers we see in everyday life such as 10, 100, and 4500. </p>
+                                    <img src="assets/img/bin.JPG" alt="" class="img-fluid">
+                                    <p>The picture above shows the process of converting hexadecimal to decimal(top), and decimal
+                                    to hexadecimal(bottom). In the top problem we are turning hexadecimal into decimal. When doing this
+                                    we have to remember that each individual value is some value multiplied by 16 to a certain power.
+                                    You always start at 16 to the power of 0 for the rightmost value, which in this case is C. Then
+                                    you use the table on the right to see which value is associated with C(12), and you multiply 12 by 16^0.
+                                    Then you move to the left to the next character, except this time we will be multiplying the value
+                                    represnted by 5 by 16 to the power of 1. If we continue this series we will get 3676.
+                                    When turning any base in this case base 16 to decimal, you keep dividing
+                                    until the number at the bottom left of this operation is less than the number you are dividing by.
+                                    In this case the bottom left number is 5, which is less than 16 so we know that this is the
+                                    stopping point. Then we record every number from that 5,so we go to the right and then go up
+                                    and record all the remainders. In this case there is only 1 remainder(10) so we have 5 and 10. Now
+                                        we have to represent the 5 and 10 in hexadecimal so we get 5A.</p>
+                                   
+
+                                    <img src="assets/img/hexa.JPG" alt="" class="img-fluid">
+                                    <p>Turning binary into decimal and vice versa is similar to what we did above.
+                                    For the left problem we are turning 25 in base 10 to binary. Since we are converting a decimal
+                                    into another base we take the number given and keep dividing by the base we want to convert it to.
+                                    Since binary is base 2, we keep dividing 25 by 2 until we get a quotient of 1. As you can see
+                                    in the chain we stop at 1 and we record 1 and all the remainders that came before getting that 1.
+                                    In this case it is important to note that 0 is a remainder and <b>Must</b> be recorded. When going from
+                                    binary to decimal, we know that the rightmost number represents 2 to the power of 0. That power
+                                    increases by 1 for each numbers to the left. This scenario is much easier because only the spots that
+                                    contain a 1 are recorded so we only have to add 2 to the power of 3 with 2 to the power of 0, because
+                                    those are the only spots where there is a 1. In binary there are only 2 possible values, that
+                                    being 1 and 0, so we don't have to worry about any extra values such as those in hexadecimal.</p>
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- New Tab Starts here -->
+
                     </div>
                 </div>
             </div>
