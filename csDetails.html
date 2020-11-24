@@ -137,31 +137,37 @@
                             <a class="nav-link" data-toggle="tab" href="#tab-3">Arrays</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-4">Methods</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-4">Strings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-5">ArrayList</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-5">Methods</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-6">Objects and Classes</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-6">ArrayList</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-7">Inheritance</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-7">Objects and Classes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-8">2-D Arrays </a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-8">Inheritance</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-9">Searching</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-9">2-D Arrays </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-10">Sorting</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-10">Searching</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-11">Recursion</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-11">Sorting</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-12">Binary Math and Hexadecimal</a>
+                            <a class="nav-link" data-toggle="tab" href="#tab-12">Recursion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-13">Binary Math and Hexadecimal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-14">Final Thoughts</a>
                         </li>
 
                     </ul>
@@ -280,6 +286,52 @@
                         <div class="tab-pane" id="tab-4">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Strings</h3>
+
+                                    <p class="font-italic">The video below will give you a brief introduction into Strings.</p>
+                                    <p>The picture below shows how strings are broken down. It is similar to arrays, but
+                                        not exactly the same. When we break up strings we put the break between 2 characters.
+                                        So we would say that the F is between the 0 and 1 index.</p>
+                                    <img src= "assets/img/Strings0.png" alt="" class="img-fluid">
+                                    <p>The picture below shows all the various methods associated with
+                                    Strings. The first method you will see is the <b>.length()</b> method, and
+                                    remember Strings are treated like objects so you have to include the parentheses.
+                                    The next method is the <b>.substring</b> method which has 2 different forms. The form
+                                    on line 10 will print every number right of the line 3. So we would write Google, and
+                                    make breaks similar to what we did in the first picture. This would print out gle.
+                                    The substring method on line 11 will print out the characters between index line 3 and index line 5,
+                                    so that line will print out gl. Then the <b>indexOf</b> method is a little more tricky
+                                    as indices are not as restrictive as they are in arrays. So the indexOf method will return
+                                    the line before the instance of the character or phrase you are looking for. Since gl occurs
+                                    after index line 3, the indexOf method will return 3. The next 2 methods we will cover are the
+                                    most commonly used methods in all of Strings. The first one is the <b>.equals</b> method
+                                    which is meant to compare 2 strings and see if they are equal. The other method is the
+                                    <b>.toCharArray</b>, which will turn the string into an array of characters. Also in
+                                    line 23 I show how to turn a character array into a string. The final method is the
+                                    <b>.concat</b> method which allows you to combine multiple strings.</p>
+
+                                    <img src= "assets/img/Strings1.png" alt="" class="img-fluid">
+                                    <p>The picture below shows how to print out a String, while using the
+                                    substring method. This is the method you can use if you want to utilize a for-loop,
+                                    in order to access each character in the String.</p>
+                                    <img src= "assets/img/Strings2.png" alt="" class="img-fluid">
+                                    <p>The final piece of code is just an example to help display a combination of
+                                    methods that can be used on Strings. This piece of code does employ some understanding of methods,
+                                        but can be done without using methods. The goal of this code is to take a string
+                                        and take the last n letters in that String and repeat those n letters n times.
+                                        The code below shows teh implementation behind that problem.
+                                    </p>
+                                    <img src= "assets/img/Strings3.png" alt="" class="img-fluid">
+
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-5">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Methods</h3>
                                     <p class="font-italic">The video below will give you a brief introduction into methods.</p>
                                     <img src= "assets/img/methods.png" alt="" class="img-fluid">
@@ -294,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-5">
+                        <div class="tab-pane" id="tab-6">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>ArrayLists</h3>
@@ -338,7 +390,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-6">
+                        <div class="tab-pane" id="tab-7">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Objects and Classes</h3>
@@ -384,7 +436,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-7">
+                        <div class="tab-pane" id="tab-8">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Inheritance</h3>
@@ -425,7 +477,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-8">
+                        <div class="tab-pane" id="tab-9">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Multi-Dimensional Arrays</h3>
@@ -466,7 +518,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-9">
+                        <div class="tab-pane" id="tab-10">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Binary Search</h3>
@@ -505,7 +557,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-10">
+                        <div class="tab-pane" id="tab-11">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Sorting</h3>
@@ -551,7 +603,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-11">
+                        <div class="tab-pane" id="tab-12">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Recursion</h3>
@@ -583,7 +635,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-12">
+                        <div class="tab-pane" id="tab-13">
                             <div class="row">
                                 <div class="col-lg-8 details order-2 order-lg-1">
                                     <h3>Binary Math and Hexadecimal</h3>
@@ -631,6 +683,21 @@
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-14">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Final Thoughts</h3>
+                                    <p class="font-italic">We hope that these videos and information was helpful.
+                                    Thank you so much for your cooperation.</p>
+
+                                    <p>There are many resources you can still practice on for the AP Computer Science test.
+                                    I also recommend using codingBat and solving the problems on those websites as well.</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
